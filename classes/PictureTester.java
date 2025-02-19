@@ -77,7 +77,15 @@ public class PictureTester
     beach.grayscale();
     beach.explore();
   }
-  
+
+/** Method to test fixUnderwater */
+  public static void testGrayscale()
+  {
+    Picture beach = new Picture("water.jpg");
+    beach.explore();
+    beach.fixUnderwater();
+    beach.explore();
+  }  
   /** Main method for testing.  Every class can have a main
     * method in Java */
   public static void main(String[] args)

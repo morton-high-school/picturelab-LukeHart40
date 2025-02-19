@@ -141,6 +141,25 @@ public class Picture extends SimplePicture
       }
     }
   }
+
+  /** Method to see fish in water.jpg */
+  public void fixUnderwater(){
+    Pixel[][] pixels = this.getPixels2D();
+    int row = 0;
+    int col = 0;
+    for (Pixel[] rowArray : pixels)
+    {
+      for (Pixel pixelObj : rowArray)
+      {
+        Color pixel = pixels[row][col];
+        if(pixel.getColor()){
+
+        }
+        col++;
+      }
+      row++;
+    }
+  }
   
   /** Method that mirrors the picture around a 
     * vertical mirror in the center of the picture
