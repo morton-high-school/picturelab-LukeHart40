@@ -143,23 +143,18 @@ public class Picture extends SimplePicture
   }
 
   /** Method to see fish in water.jpg */
-  // public void fixUnderwater(){
-  //   Pixel[][] pixels = this.getPixels2D();
-  //   int row = 0;
-  //   int col = 0;
-  //   for (Pixel[] rowArray : pixels)
-  //   {
-  //     for (Pixel pixelObj : rowArray)
-  //     {
-  //       Color pixel = pixels[row][col];
-  //        if(pixel.getColor()){
-
-  //       }
-  //       col++;
-  //     }
-  //     row++;
-  //   }
-  // }
+  public void fixUnderwater(){
+    Pixel[][] pixels = this.getPixels2D();
+    for (Pixel[] rowArray : pixels){
+      for (Pixel pixelObj : rowArray){
+        if((pixelObj.getRed() <= 20) && (pixelObj.getGreen() >= 150 && pixelObj.getGreen() <= 180) && (pixelObj.getBlue() >= 150 && pixelObj.getBlue() <= 200)){
+          pixelObj.setRed(0);
+          pixelObj.setGreen(255);
+          pixelObj.setBlue(0);
+        }
+      }
+    }
+  }
 
   //Red <= 20 / Green >= 150 && Green <= 180
   
