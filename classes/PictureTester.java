@@ -99,7 +99,7 @@ public class PictureTester
   /** Method to test mirrorVerticalRightToLeft */
   public static void testMirrorHorizontal()
   {
-    Picture beach = new Picture("caterpillar.jpg");
+    Picture beach = new Picture("blueMotorcycle.jpg");
     beach.explore();
     beach.mirrorHorizontal();
     beach.explore();
@@ -123,6 +123,24 @@ public class PictureTester
     beach.explore();
   }
 
+  /** Method to test mirrorArms */
+  public static void testMirrorArms()
+  {
+    Picture beach = new Picture("snowman.jpg");
+    beach.explore();
+    beach.mirrorArms();
+    beach.explore();
+  }
+
+  /** Method to test mirrorGull */
+  public static void testMirrorGull()
+  {
+    Picture beach = new Picture("seagull.jpg");
+    beach.explore();
+    beach.mirrorGull();
+    beach.explore();
+  }
+
   /** Main method for testing.  Every class can have a main
     * method in Java */
   public static void main(String[] args)
@@ -142,9 +160,9 @@ public class PictureTester
     //testMirrorHorizontalBotToTop();
     //testMirrorDiagonal();
     //testMirrorVertical();
-    testMirrorTemple();
+    //testMirrorTemple();
     //testMirrorArms();
-    //testMirrorGull();
+    testMirrorGull();
     //testMirrorDiagonal();
     //testCollage();
     //testCopy();

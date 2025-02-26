@@ -221,6 +221,44 @@ public class Picture extends SimplePicture
     }
   }
 
+  /** Method to mirror snowman arms */
+  public void mirrorArms(){
+    Pixel[][] pixels = this.getPixels2D();
+    Pixel topPixel = null;
+    Pixel bottomPixel = null;
+    for (int row = 157; row <= 191; row++){
+      for (int col = 107; col <= 169; col++)
+      {
+        topPixel = pixels[row][col];
+        bottomPixel = pixels[row + 70][col - 7];
+        bottomPixel.setColor(topPixel.getColor());
+      }
+    }
+    for (int row = 173; row <= 194; row++){
+      for (int col = 238; col <= 292; col++)
+      {
+        topPixel = pixels[row][col];
+        bottomPixel = pixels[row + 70][col + 7];
+        bottomPixel.setColor(topPixel.getColor());
+      }
+    }
+  }
+
+
+  /** Method to mirror gull to the right */
+  public void mirrorGull(){
+    Pixel[][] pixels = this.getPixels2D();
+    Pixel topPixel = null;
+    Pixel bottomPixel = null;
+    for (int row = 234; row <= 320; row++){
+      for (int col = 237; col <= 343; col++)
+      {
+        topPixel = pixels[row][col];
+        bottomPixel = pixels[row + 10][col + 125];
+        bottomPixel.setColor(topPixel.getColor());
+      }
+    }
+  }
   // Change the second for statement 
   
   /** Method that mirrors the picture around a 
@@ -240,7 +278,7 @@ public class Picture extends SimplePicture
         rightPixel = pixels[row][width - 1 - col];
         rightPixel.setColor(leftPixel.getColor());
       }
-    } 
+    }
   }
   
   /** Mirror just part of a picture of a temple */
