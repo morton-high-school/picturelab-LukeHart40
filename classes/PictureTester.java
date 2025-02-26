@@ -95,6 +95,52 @@ public class PictureTester
     beach.mirrorVerticalRightToLeft();
     beach.explore();
   }
+
+  /** Method to test mirrorVerticalRightToLeft */
+  public static void testMirrorHorizontal()
+  {
+    Picture beach = new Picture("blueMotorcycle.jpg");
+    beach.explore();
+    beach.mirrorHorizontal();
+    beach.explore();
+  }
+
+  /** Method to test mirrorVerticalRightToLeft */
+  public static void testMirrorHorizontalBotToTop()
+  {
+    Picture beach = new Picture("caterpillar.jpg");
+    beach.explore();
+    beach.mirrorHorizontalBotToTop();
+    beach.explore();
+  }
+
+  /** Method to test mirrorVerticalRightToLeft */
+  public static void testMirrorDiagonal()
+  {
+    Picture beach = new Picture("beach.jpg");
+    beach.explore();
+    beach.mirrorDiagonal();
+    beach.explore();
+  }
+
+  /** Method to test mirrorArms */
+  public static void testMirrorArms()
+  {
+    Picture beach = new Picture("snowman.jpg");
+    beach.explore();
+    beach.mirrorArms();
+    beach.explore();
+  }
+
+  /** Method to test mirrorGull */
+  public static void testMirrorGull()
+  {
+    Picture beach = new Picture("seagull.jpg");
+    beach.explore();
+    beach.mirrorGull();
+    beach.explore();
+  }
+
   /** Main method for testing.  Every class can have a main
     * method in Java */
   public static void main(String[] args)
@@ -109,13 +155,13 @@ public class PictureTester
     //testNegate();
     //testGrayscale();
     //testFixUnderwater();
-    testMirrorVerticalRightToLeft();
+    //testMirrorVerticalRightToLeft();
     //testMirrorVertical();
     //testMirrorTemple();
     //testMirrorArms();
     //testMirrorGull();
     //testMirrorDiagonal();
-    //testCollage();
+    testCollage();
     //testCopy();
     //testEdgeDetection();
     //testEdgeDetection2();
