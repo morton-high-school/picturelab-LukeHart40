@@ -141,6 +141,15 @@ public class PictureTester
     beach.explore();
   }
 
+  /** Method to test mirrorGull */
+  public static void testCopy()
+  {
+    Picture beach = new Picture("seagull.jpg");
+    beach.explore();
+    beach.mirrorGull();
+    beach.explore();
+  }
+
   /** Main method for testing.  Every class can have a main
     * method in Java */
   public static void main(String[] args)
@@ -161,7 +170,7 @@ public class PictureTester
     //testMirrorArms();
     //testMirrorGull();
     //testMirrorDiagonal();
-    testCollage();
+    //testCollage();
     //testCopy();
     //testEdgeDetection();
     //testEdgeDetection2();
