@@ -144,9 +144,8 @@ public class PictureTester
   /** Method to test mirrorGull */
   public static void testCopy()
   {
-    Picture beach = new Picture("seagull.jpg");
-    beach.explore();
-    beach.mirrorGull();
+    Picture beach = new Picture("640x480.jpg");
+    beach.createCollage();
     beach.explore();
   }
 
@@ -171,7 +170,7 @@ public class PictureTester
     //testMirrorGull();
     //testMirrorDiagonal();
     //testCollage();
-    //testCopy();
+    testCopy();
     //testEdgeDetection();
     //testEdgeDetection2();
     //testChromakey();
