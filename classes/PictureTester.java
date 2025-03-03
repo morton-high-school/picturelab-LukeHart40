@@ -141,11 +141,27 @@ public class PictureTester
     beach.explore();
   }
 
-  /** Method to test mirrorGull */
+  /** Method to test copy */
   public static void testCopy()
   {
     Picture beach = new Picture("640x480.jpg");
-    beach.createCollage();
+    beach.copyImage();
+    beach.explore();
+  }
+
+  /** Method to test myCollage */
+  public static void testMyCollage()
+  {
+    Picture beach = new Picture("640x480.jpg");
+    beach.myCollage();
+    beach.explore();
+  }
+
+  /** Method to test edgeDetection2 */
+  public static void testEdgeDetection2()
+  {
+    Picture beach = new Picture("swan.jpg");
+    beach.edgeDetection2(5);
     beach.explore();
   }
 
@@ -170,9 +186,10 @@ public class PictureTester
     //testMirrorGull();
     //testMirrorDiagonal();
     //testCollage();
-    testCopy();
-    //testEdgeDetection();
-    //testEdgeDetection2();
+    //testCopy();
+    //testMyCollage();
+    testEdgeDetection();
+    testEdgeDetection2();
     //testChromakey();
     //testEncodeAndDecode();
     //testGetCountRedOverValue(250);
